@@ -42,3 +42,13 @@ for (var producto of arrayProductos) {
     document.write("<ul><li><h3>En 6 cuotas cada una es de: " + producto.seisCuotas() + "</h3></li></ul><br>");
 }
 
+var ingresado = prompt('Ingrese el producto que desea buscar');
+var prodIngresado = arrayProductos.filter(producto => producto.nombre.includes(ingresado));
+console.log(prodIngresado);
+document.write("<h3>Lista de productos Ingresados para busqueda: </h3>");
+
+for (var producto of prodIngresado) {
+    document.write("<ul><li><h3>Nombre: " + producto.nombre + "</h3></li></ul>");
+    document.write("<ul><li><h3>Detalle: " + producto.detalle + "</h3></li></ul>");
+    document.write("<ul><li><h3>Precio: " + producto.precio + "</h3></li></ul><br>");
+}
