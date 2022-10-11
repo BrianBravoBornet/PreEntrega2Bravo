@@ -4,17 +4,11 @@ class Producto {
         this.precio = parseFloat(precio);
         this.detalle = detalle;
         this.cantidad = cantidad;
-        this.disponible = true;
     }
 
 seisCuotas(){
     return this.precio / 6;
 }
-
-Vender(){
-    this.disponible = false;
-}
-
 }
 
 var arrayProductos = [];
