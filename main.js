@@ -42,8 +42,8 @@ for (var producto of arrayProductos) {
     document.write("<h3>Detalle: " + producto.detalle + "</h3>");
     document.write("<h3>Cantidad: " + producto.cantidad + "</h3>");
     document.write("<h3>Precio: " + producto.precio + "</h3>");
-    document.write("<<h3>En 3 cuotas cada una es de: " + producto.tresCuotas() + "</h3><br>");
-    document.write("<<h3>En 6 cuotas cada una es de: " + producto.seisCuotas() + "</h3><br>");
+    document.write("<h3>En 3 cuotas cada una es de: " + producto.tresCuotas() + "</h3><br>");
+    document.write("<h3>En 6 cuotas cada una es de: " + producto.seisCuotas() + "</h3><br>");
     document.write("<h3>En 12 cuotas cada una es de: " + producto.doceCuotas() + "</h3><br>");
     
 }
